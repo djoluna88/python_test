@@ -20,7 +20,7 @@ def random_teams(x,y):
             new_team=random.sample(x,temp_count1)    # I used the sample function in order to select aleatory members from persons list without repetition
        
 
-            if temp_count1==2:                             # This conditional to select the temporal count for second and third array respectively
+            if temp_count1==2:                       # This conditional to select the temporal count for second and third array respectively
 
                 temp_count2=3
                 temp_count2=random.randint(2,3)
@@ -59,7 +59,7 @@ def random_teams(x,y):
 
 
 
-# Funcion where I can my functions and main menu
+# Main Function where I can call the random function, provide the main inputs
 
 if __name__ == "__main__":
 
