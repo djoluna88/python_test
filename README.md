@@ -9,7 +9,7 @@
 
 ### 2.  By default, it  has solely 3 teams
 
-### 3.  For each execution it has new team membersm, distribbuited randomly
+### 3.  For each execution it has new team members, distribuited randomly
 
 
 ### 4.  It's possible one member will find it in other teams
