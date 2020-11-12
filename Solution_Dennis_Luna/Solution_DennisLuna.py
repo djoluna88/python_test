@@ -46,15 +46,15 @@ def random_teams(x,y):
             
         new_team=[]  # Final List for each one team, that allows me to insert the members for each cycle increment  
             
-        if 2 <= len(x):                             
+        if 2 <= len(x):                             # We require at minimum 2 members                     
                 
-            qm= random.randint(2,len(x))          # Generates the size for each team
+            qm= random.randint(2,len(x))             # Generates the size for each team
 
-            while c < qm:
+            while c < qm:                            # How many times we need to generate new index in accordance with size for each team 
                     
-                index = random.randint(0,len(x)-1)
-                f=x.pop(index)                   # I used this method in order to avoid repetition from members between teams
-                new_team.append(f)               # Adding the member
+                index = random.randint(0,len(x)-1)   # Getting the random indexes 
+                f=x.pop(index)                       # I used this method in order to avoid repetition from members between teams
+                new_team.append(f)                   # Adding the member
                 c+=1
                         
             c=0 
@@ -110,7 +110,7 @@ if __name__ == "__main__":
                 
                 te=teams(t)
                 
-                temp=tuple(pe)  # In this way we don't loss the information from the persons list after execution function
+                temp=tuple(pe)  # In this way we don't lost the information from the persons list after execution function
 
 
                 print("Welcome to the First Solution\n")  
@@ -124,7 +124,7 @@ if __name__ == "__main__":
             
                     if r=="Y" or r=="y":
 
-                        k=list(temp)          # To convert the temp tuple to list again, in order to modify the list again
+                        k=list(temp)          # To convert the temp tuple to list again, in order to modify the list againcd 
                         random_teams(k,te) 
                         
 
